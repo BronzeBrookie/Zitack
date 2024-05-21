@@ -1,0 +1,314 @@
+/*Body Styles*/
+img {
+    border-radius: 20px;
+}
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(image/10.png) no-repeat;
+    background-position: top;
+}
+/*About Us*/
+.abtus_container {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    text-align: left;
+    padding: 30px;
+    background-size: cover;
+}
+/*Button Styles*/
+button {
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition-duration: 0.9s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+}
+button:hover {
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+}
+/*History Of Muay Thai Container*/
+.info img {
+    margin: 0px 120px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.p {
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+/*Muay Thai Routine Box*/
+.routine_text {
+    background-color: orangered;
+    margin: auto;
+    text-align: center;
+    padding: 15px 20px;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+.text_box {
+    text-shadow:1px 1px 10px #fff, 1px 1px 70px #ccc;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 350px 300px;
+    border-radius: 10px;
+}
+
+.text_box button {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition-duration: 0.9s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    text-transform: uppercase bold;
+}
+.text_box button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/*Navigation Bar*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .7s;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.header:hover::after {
+    left: 100%;
+}
+.logo {
+    font-size: 25px;
+    color: yellow;
+    text-shadow:1px 1px 10px yellow, 1px 1px 20px yellow;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 15px;;
+    border-radius: 20px;
+    padding: 8px 8px;
+    color: white;
+    text-shadow:1px 1px 10px #fff, 1px 1px 20px #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+    text-shadow:1px 1px 10px yellow, 1px 1px 20px yellow;
+    color: yellow;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+    padding: 8px 8px;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(37, 36, 36);
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.icon .bi:hover {
+    padding: 8px 8px;
+    border-radius: 10px;
+    color: yellow;
+    text-shadow: 1px 1px 10px yellow, 1px 1px 70px yellow;
+    font-size: 28px;
+}
+.icon .bi {
+    padding: 8px 8px;
+    color: white;
+    font-size: 28px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 70px #ccc;
+}
+.icons .bi {
+    padding: 8px 8px;
+    color: yellow;
+    font-size: 38px;
+    text-shadow:1px 1px 10px yellow, 1px 1px 70px yellow;
+}
+.midlogo {
+    margin: auto;
+}
+.hours  {
+   margin: auto;
+}
+
+.contact    {
+    margin: auto;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition-duration: 0.9s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 20px 5%;
+    }
+    .text_box {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    .container img {
+        margin-left: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text_box {
+        display: block;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .icons {
+        display: inline-flex;
+    }
+    .midlogo {
+        justify-content: center;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+        overflow: hidden;
+        transition: 1s ease;
+    }
+    #check:checked~.navbar {
+        height: 283px;
+    }
+    .navbar a {
+        display: block;
+        font-size: 18px;
+        margin: 12px 0;
+        text-align: center;
+    }
+}
